@@ -16,5 +16,15 @@ namespace Snake_Game
         {
             InitializeComponent();
         }
+
+        private void keyisdown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void keyisup(object sender, KeyEventArgs e)
+        {
+
+        }
     }
 }
