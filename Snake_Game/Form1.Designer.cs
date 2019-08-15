@@ -48,6 +48,7 @@
             this.pbCanvas.Size = new System.Drawing.Size(450, 490);
             this.pbCanvas.TabIndex = 1;
             this.pbCanvas.TabStop = false;
+            this.pbCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.updateGraphics);
             // 
             // label1
             // 
@@ -112,6 +113,7 @@
             this.Controls.Add(this.pbCanvas);
             this.Name = "Form1";
             this.Text = "Snake Game";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.updateGraphics);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             ((System.ComponentModel.ISupportInitialize)(this.pbCanvas)).EndInit();
